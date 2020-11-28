@@ -1,27 +1,37 @@
-# DobokuAR
+これは、このサイトで紹介されている AR を Angular に移植する手順です。
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
+【AR.js入門】簡単にWebARで遊んでみた【A-Frame使うよ】
 
-## Development server
+ https://qiita.com/sakaryu/items/769a2a538baf7e4ee1c7
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 【この記事の目指すところ】
 
-## Code scaffolding
+WebARで遊べる簡単なサイトを作る
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 【この記事で使うライブラリの紹介】
 
-## Build
+### aframe
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+WebVRを手軽にできるようにしたライブラリ。つよい。
 
-## Running unit tests
+https://github.com/aframevr/aframe
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### ar.js
 
-## Running end-to-end tests
+WebARを手軽にできるようにしたライブラリ。aframeを使う。つよい。
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+https://github.com/jeromeetienne/AR.js
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## 【AR事前知識：ARマーカー】
+
+基本的にはARは、ARマーカーを用いて遊びます。
+今回使うマーカーはこんな感じのです↓
+
+![](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F84407%2F77d52724-f070-cd62-f003-fdaaf18074c3.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=e0ebf51fb5df123a5a918a1f6360c708)
+
+## ここで遊べます（GitHub Pages）
+
+https://dobopro.github.io/AR/
+
+（スマホで開いて、この記事でさきほど出てきたマーカーにカメラをかざすとARが見れるよ）
