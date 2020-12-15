@@ -15,12 +15,23 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-text
-        value="sasaco ."
+
+    <a-assets>
+      <a-asset-item id="santa-obj" src="./assets/model_obj/santa/santa.obj"></a-asset-item>
+      <a-asset-item id="santa-mtl" src="./assets/model_obj/santa/santa.mtl"></a-asset-item>
+    </a-assets>
+
+    <a-obj-model id="santa" src="#santa-obj" mtl="#santa-mtl" position="0 0 0" scale="0.1 0.1 0.1" rotation="0 0 0" look-at="[gps-camera]"
+    gps-entity-place="latitude: 35.70104893052945; longitude: 139.56488859616928;" >
+    </a-obj-model>
+
+     <!--  <a-text
+         value="sasaco ."
         look-at="[gps-camera]"
         scale="120 120 120"
-        gps-entity-place="latitude: 35.70104893052945; longitude: 139.56488859616928;"
-      ></a-text>
+        gps-entity-place="latitude: 35.70104893052945; longitude: 139.56488859616928;" 
+      ></a-text> -->
+      
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   <script src="runtime.acf0dec4155e77772545.js" defer></script><script src="polyfills.35a5ca1855eb057f016a.js" defer></script><script src="main.6cb9bf308058e3a5f38f.js" defer></script></body>
